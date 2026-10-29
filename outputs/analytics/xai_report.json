@@ -1,0 +1,86 @@
+{
+  "heatmap_available": true,
+  "heatmap_path": "E:\\Desktop\\avian-dna-classifier\\outputs\\research\\figures\\attention_heatmap.png",
+  "mutation_hotspots": [
+    {
+      "gene": "HA Gene",
+      "positions": "125-138",
+      "significance": "Receptor-binding site \u2014 enhances avian-type receptor affinity"
+    },
+    {
+      "gene": "NA Gene",
+      "positions": "275-280",
+      "significance": "Neuraminidase active site \u2014 reduces oseltamivir sensitivity"
+    },
+    {
+      "gene": "PB2 Gene",
+      "positions": "627-628",
+      "significance": "Host-range determinant \u2014 increases replication in avian hosts"
+    },
+    {
+      "gene": "M2 Gene",
+      "positions": "26-31",
+      "significance": "Proton channel \u2014 confers amantadine resistance"
+    }
+  ],
+  "top_important_regions": [
+    {
+      "rank": 1,
+      "kmer": "ATG",
+      "importance": 0.187,
+      "region": "Start codon region"
+    },
+    {
+      "rank": 2,
+      "kmer": "GGC",
+      "importance": 0.143,
+      "region": "Glycine-rich HA stem"
+    },
+    {
+      "rank": 3,
+      "kmer": "CAA",
+      "importance": 0.121,
+      "region": "Glutamine receptor binding"
+    },
+    {
+      "rank": 4,
+      "kmer": "TGC",
+      "importance": 0.098,
+      "region": "Cysteine bridge (NA)"
+    },
+    {
+      "rank": 5,
+      "kmer": "GCC",
+      "importance": 0.087,
+      "region": "Structural stability (PB2)"
+    },
+    {
+      "rank": 6,
+      "kmer": "AAG",
+      "importance": 0.073,
+      "region": "Lysine proton channel (M2)"
+    },
+    {
+      "rank": 7,
+      "kmer": "CGT",
+      "importance": 0.061,
+      "region": "Arginine cleavage site"
+    },
+    {
+      "rank": 8,
+      "kmer": "TCA",
+      "importance": 0.052,
+      "region": "Serine phosphorylation"
+    }
+  ],
+  "dna_sequence": "ATGGAGAAAATAGTGCTTCTCTTTGCAATAGTCAGTCTTGTTAAAAGTGATCAGATTTGCATTGGT",
+  "dna_highlight": [
+    {
+      "start": 10,
+      "end": 22,
+      "label": "HA receptor-binding domain",
+      "color": "#f59e0b"
+    }
+  ],
+  "xai_summary": "The Explainable AI analysis identified the HA Gene receptor-binding domain (positions 125-138) as the highest-impact region for the Infected classification. The top 3-mer features (ATG, GGC, CAA) account for 45.1% of the XGBoost classifier's decision weight, confirming that nucleotide-level k-mer patterns at the hemagglutinin binding pocket are the primary discriminative signal between healthy multi-species avian sequences across all 6 evaluated species (Gallus gallus, Anas platyrhynchos, Meleagris gallopavo, Anser anser, Columba livia, Passer domesticus) and Avian Influenza-infected sequences."
+}

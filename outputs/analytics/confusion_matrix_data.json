@@ -1,0 +1,8 @@
+{
+  "TP": 147,
+  "TN": 3570,
+  "FP": 86,
+  "FN": 5,
+  "png": "E:\\Desktop\\avian-dna-classifier\\outputs\\analytics\\confusion_matrix.png",
+  "pdf": "E:\\Desktop\\avian-dna-classifier\\outputs\\analytics\\confusion_matrix.pdf"
+}

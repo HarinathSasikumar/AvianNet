@@ -1,0 +1,57 @@
+{
+  "module": "XAI Consensus Analysis",
+  "timestamp": "2026-09-27T22:06:22.778582",
+  "top_k": 10,
+  "random_seed": 42,
+  "overall": {
+    "n_sequences": 1,
+    "mean_consensus": 1.0,
+    "median_consensus": 1.0,
+    "std_consensus": 0.0,
+    "species_summary": {
+      "GALLUS": {
+        "scientific_name": "Gallus gallus",
+        "common_name": "Chicken",
+        "n_sequences": 1,
+        "mean_consensus_score": 1.0,
+        "std_consensus_score": 0.0,
+        "median_consensus_score": 1.0,
+        "mean_jaccard_attn_shap": 1.0
+      }
+    }
+  },
+  "per_sequence": [
+    {
+      "seq_id": "SEQ_00000_SHAP_GLOBAL",
+      "species_tag": "GALLUS",
+      "scientific_name": "Gallus gallus",
+      "common_name": "Chicken",
+      "prediction": "Unknown",
+      "top_k": 10,
+      "attention_region": "0\u20139",
+      "shap_region": "0\u20139",
+      "lime_region": "0\u20139",
+      "three_way_consensus": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "jaccard_attn_shap": 1.0,
+      "jaccard_attn_lime": 1.0,
+      "jaccard_shap_lime": 1.0,
+      "three_way_jaccard": 1.0,
+      "rank_corr_attn_shap": 0.0,
+      "rank_corr_attn_lime": 0.05,
+      "rank_corr_shap_lime": 0.0,
+      "consensus_score": 1.0,
+      "consensus_pct": 100.0
+    }
+  ]
+}

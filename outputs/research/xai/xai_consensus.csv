@@ -1,0 +1,2 @@
+seq_id,species_tag,scientific_name,common_name,prediction,top_k,attention_region,shap_region,lime_region,jaccard_attn_shap,jaccard_attn_lime,jaccard_shap_lime,three_way_jaccard,rank_corr_attn_shap,rank_corr_attn_lime,rank_corr_shap_lime,consensus_score,consensus_pct
+SEQ_00000_SHAP_GLOBAL,GALLUS,Gallus gallus,Chicken,Unknown,10,0–9,0–9,0–9,1.0,1.0,1.0,1.0,0.0,0.05,0.0,1.0,100.0

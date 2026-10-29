@@ -1,0 +1,293 @@
+{
+  "architecture": "v2_lightweight_concat_fusion",
+  "timestamp": "2026-10-03T14:40:06.228869",
+  "random_seed": 42,
+  "dataset": {
+    "total": 5318,
+    "healthy": 1414,
+    "infected": 3904,
+    "train": 3722,
+    "val": 798,
+    "test": 798
+  },
+  "fusion_module": "LightweightConcatFusion",
+  "fusion_params": 657792,
+  "validation_metrics": {
+    "accuracy": 0.968671679197995,
+    "precision": 0.9730185497470489,
+    "recall": 0.984641638225256,
+    "f1": 0.9787955894826124,
+    "auc": 0.9806169102968638,
+    "mcc": 0.9190889177565242,
+    "report": "              precision    recall  f1-score   support\n\n     Healthy       0.96      0.92      0.94       212\n    Infected       0.97      0.98      0.98       586\n\n    accuracy                           0.97       798\n   macro avg       0.96      0.95      0.96       798\nweighted avg       0.97      0.97      0.97       798\n"
+  },
+  "test_metrics": {
+    "accuracy": 0.9736842105263158,
+    "precision": 0.9845626072041166,
+    "recall": 0.9795221843003413,
+    "f1": 0.9820359281437125,
+    "auc": 0.9901313671195827,
+    "mcc": 0.9328997272319723,
+    "report": "              precision    recall  f1-score   support\n\n     Healthy       0.94      0.96      0.95       212\n    Infected       0.98      0.98      0.98       586\n\n    accuracy                           0.97       798\n   macro avg       0.96      0.97      0.97       798\nweighted avg       0.97      0.97      0.97       798\n"
+  },
+  "confusion_matrix": [
+    [
+      203,
+      9
+    ],
+    [
+      12,
+      574
+    ]
+  ],
+  "xai": {
+    "shap": {},
+    "lime": {
+      "lime_chart_png": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\lime_explanation.png",
+      "explanations": [
+        {
+          "sample_idx": 0,
+          "true_label": "Infected",
+          "prob_infected": 0.9904357194900513,
+          "top_features": [
+            {
+              "feature": "feat_68 > 0.05",
+              "contribution": 0.1376313231878251
+            },
+            {
+              "feature": "feat_15 <= -0.06",
+              "contribution": -0.11858803729035279
+            },
+            {
+              "feature": "feat_30 <= -0.02",
+              "contribution": 0.10506306303366439
+            },
+            {
+              "feature": "feat_94 <= -0.02",
+              "contribution": 0.09646356446800343
+            },
+            {
+              "feature": "feat_7 <= 0.02",
+              "contribution": 0.06503346821837781
+            },
+            {
+              "feature": "feat_44 <= 0.05",
+              "contribution": -0.06296766480962906
+            },
+            {
+              "feature": "0.02 < feat_31 <= 0.03",
+              "contribution": 0.0584952871247033
+            },
+            {
+              "feature": "feat_0 <= -0.03",
+              "contribution": 0.057915559092042206
+            },
+            {
+              "feature": "feat_127 <= -0.02",
+              "contribution": -0.045083362423792184
+            },
+            {
+              "feature": "feat_36 <= -0.02",
+              "contribution": 0.04239700355219811
+            }
+          ]
+        },
+        {
+          "sample_idx": 1,
+          "true_label": "Healthy",
+          "prob_infected": 0.026744160801172256,
+          "top_features": [
+            {
+              "feature": "feat_30 > -0.01",
+              "contribution": -0.2080680148861346
+            },
+            {
+              "feature": "feat_68 <= 0.03",
+              "contribution": -0.20320310986977952
+            },
+            {
+              "feature": "feat_107 <= 0.00",
+              "contribution": -0.10024075440427507
+            },
+            {
+              "feature": "-0.02 < feat_94 <= -0.01",
+              "contribution": 0.08657798855454892
+            },
+            {
+              "feature": "feat_43 <= 0.00",
+              "contribution": -0.08269529896943065
+            },
+            {
+              "feature": "feat_88 <= -0.03",
+              "contribution": -0.07682129998918556
+            },
+            {
+              "feature": "-0.05 < feat_15 <= -0.05",
+              "contribution": 0.07129294455516662
+            },
+            {
+              "feature": "feat_127 <= -0.02",
+              "contribution": -0.0634051019111415
+            },
+            {
+              "feature": "feat_29 > -0.01",
+              "contribution": -0.05599792551129822
+            },
+            {
+              "feature": "feat_36 <= -0.02",
+              "contribution": 0.043079105000567997
+            }
+          ]
+        },
+        {
+          "sample_idx": 2,
+          "true_label": "Infected",
+          "prob_infected": 0.9848749041557312,
+          "top_features": [
+            {
+              "feature": "feat_94 > 0.00",
+              "contribution": -0.1289249477038966
+            },
+            {
+              "feature": "feat_15 <= -0.06",
+              "contribution": -0.1227072126808132
+            },
+            {
+              "feature": "feat_31 <= 0.01",
+              "contribution": -0.12065847785855843
+            },
+            {
+              "feature": "-0.02 < feat_30 <= -0.01",
+              "contribution": 0.07636421468161887
+            },
+            {
+              "feature": "feat_88 > -0.02",
+              "contribution": 0.07306596176182965
+            },
+            {
+              "feature": "feat_36 <= -0.02",
+              "contribution": 0.04867236941167648
+            },
+            {
+              "feature": "feat_87 <= -0.03",
+              "contribution": 0.04770836310037854
+            },
+            {
+              "feature": "feat_127 <= -0.02",
+              "contribution": -0.04306083818307838
+            },
+            {
+              "feature": "feat_43 > 0.02",
+              "contribution": 0.04237683979915454
+            },
+            {
+              "feature": "-0.01 < feat_103 <= -0.00",
+              "contribution": 0.0413728264065749
+            }
+          ]
+        },
+        {
+          "sample_idx": 3,
+          "true_label": "Infected",
+          "prob_infected": 0.6554107666015625,
+          "top_features": [
+            {
+              "feature": "feat_68 <= 0.03",
+              "contribution": -0.1993682755908569
+            },
+            {
+              "feature": "feat_31 <= 0.01",
+              "contribution": -0.13559402009963428
+            },
+            {
+              "feature": "-0.02 < feat_30 <= -0.01",
+              "contribution": 0.08338474297213563
+            },
+            {
+              "feature": "-0.05 < feat_15 <= -0.05",
+              "contribution": 0.07023236987294648
+            },
+            {
+              "feature": "-0.01 < feat_94 <= 0.00",
+              "contribution": -0.0548846168894854
+            },
+            {
+              "feature": "feat_7 <= 0.02",
+              "contribution": 0.04123840332043648
+            },
+            {
+              "feature": "feat_80 > -0.00",
+              "contribution": -0.039269961477399085
+            },
+            {
+              "feature": "feat_43 > 0.02",
+              "contribution": 0.03628191923046965
+            },
+            {
+              "feature": "feat_62 <= -0.00",
+              "contribution": -0.036238245005887196
+            },
+            {
+              "feature": "feat_87 <= -0.03",
+              "contribution": 0.0355958691159846
+            }
+          ]
+        },
+        {
+          "sample_idx": 4,
+          "true_label": "Healthy",
+          "prob_infected": 0.004931887611746788,
+          "top_features": [
+            {
+              "feature": "feat_68 <= 0.03",
+              "contribution": -0.22361568659400693
+            },
+            {
+              "feature": "feat_30 > -0.01",
+              "contribution": -0.21587436480977498
+            },
+            {
+              "feature": "feat_31 <= 0.01",
+              "contribution": -0.12923992936072964
+            },
+            {
+              "feature": "feat_94 > 0.00",
+              "contribution": -0.12372951977345055
+            },
+            {
+              "feature": "feat_43 <= 0.00",
+              "contribution": -0.08763851066677736
+            },
+            {
+              "feature": "feat_103 <= -0.03",
+              "contribution": -0.0771705752728961
+            },
+            {
+              "feature": "feat_88 <= -0.03",
+              "contribution": -0.07051722116431748
+            },
+            {
+              "feature": "feat_29 > -0.01",
+              "contribution": -0.06740800956685987
+            },
+            {
+              "feature": "feat_44 <= 0.05",
+              "contribution": -0.0590456216225589
+            },
+            {
+              "feature": "feat_0 > -0.01",
+              "contribution": -0.05275859306144087
+            }
+          ]
+        }
+      ]
+    },
+    "perturbation_fidelity": {}
+  },
+  "figures": {
+    "confusion_matrix": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\figures\\confusion_matrix_v2.png",
+    "roc_curve": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\figures\\roc_curve_v2.png",
+    "perturbation": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\figures\\perturbation_analysis.png",
+    "comparison": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\figures\\architecture_comparison.png"
+  }
+}

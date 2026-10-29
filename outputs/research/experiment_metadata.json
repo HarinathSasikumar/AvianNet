@@ -1,0 +1,23 @@
+{
+  "experiment_name": "Genomic Explainability & Evidence Framework",
+  "timestamp": "2026-09-27T22:08:34.858043",
+  "random_seed": 42,
+  "dataset_version": "NCBI Nucleotide 25,385 sequences",
+  "species_included": [
+    "PIGEON",
+    "DUCK",
+    "GALLUS",
+    "AVIAN"
+  ],
+  "modules_executed": [
+    "Module 1: XAI Consensus Analysis",
+    "Module 2: Perturbation Analysis",
+    "Module 3: Explanation Stability",
+    "Module 4: XAI Fidelity Test",
+    "Module 5: Evidence-Backed Explanation",
+    "Unified Genomic Trust Engine"
+  ],
+  "top_k_features": 10,
+  "device": "CPU",
+  "python_version": "3.10.0"
+}

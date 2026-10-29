@@ -1,0 +1,515 @@
+{
+  "module": "Evidence-Backed Explanation",
+  "timestamp": "2026-09-27T22:06:29.971270",
+  "random_seed": 42,
+  "n_sequences": 15,
+  "total_papers": 26,
+  "species_summary": {
+    "DUCK": {
+      "scientific_name": "Anas platyrhynchos",
+      "n_sequences": 3,
+      "total_papers": 7,
+      "mean_papers": 2.33,
+      "evidence_status_counts": {
+        "Supporting literature identified": 1,
+        "Limited supporting literature identified": 2
+      }
+    },
+    "AVIAN": {
+      "scientific_name": "Avian spp.",
+      "n_sequences": 7,
+      "total_papers": 0,
+      "mean_papers": 0.0,
+      "evidence_status_counts": {
+        "No supporting literature retrieved (network or API unavailable)": 7
+      }
+    },
+    "PIGEON": {
+      "scientific_name": "Columba livia",
+      "n_sequences": 2,
+      "total_papers": 4,
+      "mean_papers": 2.0,
+      "evidence_status_counts": {
+        "Supporting literature identified": 1,
+        "Limited supporting literature identified": 1
+      }
+    },
+    "GALLUS": {
+      "scientific_name": "Gallus gallus",
+      "n_sequences": 3,
+      "total_papers": 15,
+      "mean_papers": 5.0,
+      "evidence_status_counts": {
+        "Supporting literature identified": 3
+      }
+    }
+  },
+  "per_sequence": [
+    {
+      "seq_id": "PZ065756.1_DUCK",
+      "species_tag": "DUCK",
+      "scientific_name": "Anas platyrhynchos",
+      "common_name": "Mallard Duck",
+      "strain": "N/A",
+      "prediction": "Healthy",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Anas platyrhynchos healthy genomic sequence analysis influenza surveillance",
+      "n_papers_retrieved": 1,
+      "evidence_status": "Limited supporting literature identified",
+      "evidence_strength": "Weak",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Healthy. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 1 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: Limited supporting literature identified. | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": [
+        {
+          "pmid": "12111409",
+          "title": "Avian paramyxoviruses and influenza viruses isolated from mallard ducks (Anas platyrhynchos) in New Zealand.",
+          "year": "2002",
+          "journal": "Archives of virology",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12111409/"
+        }
+      ]
+    },
+    {
+      "seq_id": "NM_001310393.1_DUCK",
+      "species_tag": "DUCK",
+      "scientific_name": "Anas platyrhynchos",
+      "common_name": "Mallard Duck",
+      "strain": "H5N1",
+      "prediction": "Infected",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian influenza H5N1 Anas platyrhynchos genomic sequence classification",
+      "n_papers_retrieved": 5,
+      "evidence_status": "Supporting literature identified",
+      "evidence_strength": "Moderate-to-Strong",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Infected. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 5 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: Supporting literature identified. | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": [
+        {
+          "pmid": "22107096",
+          "title": "Genetic characterization of low pathogenic H5N1 and co-circulating avian influenza viruses in wild mallards (Anas platyrhynchos) in Belgium, 2008.",
+          "year": "2011",
+          "journal": "Avian pathology : journal of the W.V.P.A",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22107096/"
+        },
+        {
+          "pmid": "23749191",
+          "title": "The duck genome and transcriptome provide insight into an avian influenza virus reservoir species.",
+          "year": "2013",
+          "journal": "Nature genetics",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23749191/"
+        },
+        {
+          "pmid": "19937535",
+          "title": "Characterization of duck H5N1 influenza viruses with differing pathogenicity in mallard (Anas platyrhynchos) ducks.",
+          "year": "2009",
+          "journal": "Avian pathology : journal of the W.V.P.A",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19937535/"
+        },
+        {
+          "pmid": "28874792",
+          "title": "Surveillance for highly pathogenic influenza A viruses in California during 2014-2015 provides insights into viral evolutionary pathways and the spatiotemporal extent of viruses in the Pacific Americas Flyway.",
+          "year": "2017",
+          "journal": "Emerging microbes & infections",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28874792/"
+        },
+        {
+          "pmid": "34958264",
+          "title": "Phylogenetic Analysis of H5N8 Highly Pathogenic Avian Influenza Viruses in Ukraine, 2016-2017.",
+          "year": "2021",
+          "journal": "Vector borne and zoonotic diseases (Larchmont, N.Y.)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34958264/"
+        }
+      ]
+    },
+    {
+      "seq_id": "NW_028154231.1_AVIAN",
+      "species_tag": "AVIAN",
+      "scientific_name": "Avian spp.",
+      "common_name": "Avian (mixed)",
+      "strain": "N/A",
+      "prediction": "Healthy",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian spp. healthy genomic sequence analysis influenza surveillance",
+      "n_papers_retrieved": 0,
+      "evidence_status": "No supporting literature retrieved (network or API unavailable)",
+      "evidence_strength": "None",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Healthy. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 0 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: No supporting literature retrieved (network or API unavailable). | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": []
+    },
+    {
+      "seq_id": "NM_001282815.1_PIGEON",
+      "species_tag": "PIGEON",
+      "scientific_name": "Columba livia",
+      "common_name": "Rock Pigeon",
+      "strain": "N/A",
+      "prediction": "Healthy",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Columba livia healthy genomic sequence analysis influenza surveillance",
+      "n_papers_retrieved": 1,
+      "evidence_status": "Limited supporting literature identified",
+      "evidence_strength": "Weak",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Healthy. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 1 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: Limited supporting literature identified. | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": [
+        {
+          "pmid": "40833823",
+          "title": "Discovery, phylogenetic, and comparative genomic analysis of novel avian gammacoronaviruses identified in feral pigeons (Columba livia domestica).",
+          "year": "2025",
+          "journal": "Journal of virology",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40833823/"
+        }
+      ]
+    },
+    {
+      "seq_id": "AB618546.1_PIGEON",
+      "species_tag": "PIGEON",
+      "scientific_name": "Columba livia",
+      "common_name": "Rock Pigeon",
+      "strain": "H5N1",
+      "prediction": "Infected",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian influenza H5N1 Columba livia genomic sequence classification",
+      "n_papers_retrieved": 3,
+      "evidence_status": "Supporting literature identified",
+      "evidence_strength": "Moderate-to-Strong",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Infected. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 3 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: Supporting literature identified. | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": [
+        {
+          "pmid": "27916476",
+          "title": "Genesis, Evolution and Prevalence of H5N6 Avian Influenza Viruses in China.",
+          "year": "2016",
+          "journal": "Cell host & microbe",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27916476/"
+        },
+        {
+          "pmid": "18976558",
+          "title": "Influenza virus (H5N1) in live bird markets and food markets, Thailand.",
+          "year": "2008",
+          "journal": "Emerging infectious diseases",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18976558/"
+        },
+        {
+          "pmid": "18756811",
+          "title": "[Interpretation of the epizootic outbreak among wild and domestic birds in the south of the European part of Russia in December 2007].",
+          "year": "2008",
+          "journal": "Voprosy virusologii",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18756811/"
+        }
+      ]
+    },
+    {
+      "seq_id": "NM_001030977.2_GALLUS",
+      "species_tag": "GALLUS",
+      "scientific_name": "Gallus gallus",
+      "common_name": "Chicken",
+      "strain": "N/A",
+      "prediction": "Healthy",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Gallus gallus healthy genomic sequence analysis influenza surveillance",
+      "n_papers_retrieved": 5,
+      "evidence_status": "Supporting literature identified",
+      "evidence_strength": "Moderate-to-Strong",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Healthy. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 5 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: Supporting literature identified. | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": [
+        {
+          "pmid": "36846456",
+          "title": "Whole-genome sequence and genesis of an avian influenza virus H5N1 isolated from a healthy chicken in a live bird market in Indonesia: accumulation of mammalian adaptation markers in avian hosts.",
+          "year": "2023",
+          "journal": "PeerJ",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36846456/"
+        },
+        {
+          "pmid": "20133090",
+          "title": "Avian influenza virus and Newcastle disease virus (NDV) surveillance in commercial breeding farm in China and the characterization of Class I NDV isolates.",
+          "year": "2010",
+          "journal": "Veterinary microbiology",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20133090/"
+        },
+        {
+          "pmid": "29920971",
+          "title": "Phylogenetic and molecular analysis of highly pathogenic avian influenza H5N8 and H5N5 viruses detected in Poland in 2016-2017.",
+          "year": "2018",
+          "journal": "Transboundary and emerging diseases",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29920971/"
+        },
+        {
+          "pmid": "23968540",
+          "title": "Antigenic and molecular characterization of avian influenza A(H9N2) viruses, Bangladesh.",
+          "year": "2013",
+          "journal": "Emerging infectious diseases",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23968540/"
+        },
+        {
+          "pmid": "34452311",
+          "title": "Live Bird Markets in Nigeria: A Potential Reservoir for H9N2 Avian Influenza Viruses.",
+          "year": "2021",
+          "journal": "Viruses",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34452311/"
+        }
+      ]
+    },
+    {
+      "seq_id": "NM_204609.2_GALLUS",
+      "species_tag": "GALLUS",
+      "scientific_name": "Gallus gallus",
+      "common_name": "Chicken",
+      "strain": "H5N1",
+      "prediction": "Infected",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian influenza H5N1 Gallus gallus genomic sequence classification",
+      "n_papers_retrieved": 5,
+      "evidence_status": "Supporting literature identified",
+      "evidence_strength": "Moderate-to-Strong",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Infected. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 5 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: Supporting literature identified. | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": [
+        {
+          "pmid": "36846456",
+          "title": "Whole-genome sequence and genesis of an avian influenza virus H5N1 isolated from a healthy chicken in a live bird market in Indonesia: accumulation of mammalian adaptation markers in avian hosts.",
+          "year": "2023",
+          "journal": "PeerJ",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36846456/"
+        },
+        {
+          "pmid": "41157640",
+          "title": "Genetic Characterization and Pathogenesis of Highly Pathogenic Avian Influenza Virus A (H5N1) Isolated in Egypt During 2021-2023.",
+          "year": "2025",
+          "journal": "Viruses",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41157640/"
+        },
+        {
+          "pmid": "40073499",
+          "title": "Evidence of novel reassortment in clade 2.3.4.4b avian influenza H5N1 viruses, India, 2024.",
+          "year": "2025",
+          "journal": "Virology",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40073499/"
+        },
+        {
+          "pmid": "41417225",
+          "title": "Genetic characterization of highly pathogenic avian influenza A/H5N8 virus isolated from commercial poultry farms in Egypt reveals zoonotic potential.",
+          "year": "2025",
+          "journal": "Archives of virology",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41417225/"
+        },
+        {
+          "pmid": "39452717",
+          "title": "Molecular Characterization of a Clade 2.3.4.4b H5N1 High Pathogenicity Avian Influenza Virus from a 2022 Outbreak in Layer Chickens in the Philippines.",
+          "year": "2024",
+          "journal": "Pathogens (Basel, Switzerland)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39452717/"
+        }
+      ]
+    },
+    {
+      "seq_id": "XM_082301035.1_AVIAN",
+      "species_tag": "AVIAN",
+      "scientific_name": "Avian spp.",
+      "common_name": "Avian (mixed)",
+      "strain": "N/A",
+      "prediction": "Healthy",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian spp. healthy genomic sequence analysis influenza surveillance",
+      "n_papers_retrieved": 0,
+      "evidence_status": "No supporting literature retrieved (network or API unavailable)",
+      "evidence_strength": "None",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Healthy. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 0 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: No supporting literature retrieved (network or API unavailable). | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": []
+    },
+    {
+      "seq_id": "PZ276932.1_DUCK",
+      "species_tag": "DUCK",
+      "scientific_name": "Anas platyrhynchos",
+      "common_name": "Mallard Duck",
+      "strain": "N/A",
+      "prediction": "Healthy",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Anas platyrhynchos healthy genomic sequence analysis influenza surveillance",
+      "n_papers_retrieved": 1,
+      "evidence_status": "Limited supporting literature identified",
+      "evidence_strength": "Weak",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Healthy. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 1 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: Limited supporting literature identified. | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": [
+        {
+          "pmid": "12111409",
+          "title": "Avian paramyxoviruses and influenza viruses isolated from mallard ducks (Anas platyrhynchos) in New Zealand.",
+          "year": "2002",
+          "journal": "Archives of virology",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12111409/"
+        }
+      ]
+    },
+    {
+      "seq_id": "NM_001398084.1_GALLUS",
+      "species_tag": "GALLUS",
+      "scientific_name": "Gallus gallus",
+      "common_name": "Chicken",
+      "strain": "N/A",
+      "prediction": "Healthy",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Gallus gallus healthy genomic sequence analysis influenza surveillance",
+      "n_papers_retrieved": 5,
+      "evidence_status": "Supporting literature identified",
+      "evidence_strength": "Moderate-to-Strong",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Healthy. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 5 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: Supporting literature identified. | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": [
+        {
+          "pmid": "36846456",
+          "title": "Whole-genome sequence and genesis of an avian influenza virus H5N1 isolated from a healthy chicken in a live bird market in Indonesia: accumulation of mammalian adaptation markers in avian hosts.",
+          "year": "2023",
+          "journal": "PeerJ",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36846456/"
+        },
+        {
+          "pmid": "20133090",
+          "title": "Avian influenza virus and Newcastle disease virus (NDV) surveillance in commercial breeding farm in China and the characterization of Class I NDV isolates.",
+          "year": "2010",
+          "journal": "Veterinary microbiology",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20133090/"
+        },
+        {
+          "pmid": "29920971",
+          "title": "Phylogenetic and molecular analysis of highly pathogenic avian influenza H5N8 and H5N5 viruses detected in Poland in 2016-2017.",
+          "year": "2018",
+          "journal": "Transboundary and emerging diseases",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29920971/"
+        },
+        {
+          "pmid": "23968540",
+          "title": "Antigenic and molecular characterization of avian influenza A(H9N2) viruses, Bangladesh.",
+          "year": "2013",
+          "journal": "Emerging infectious diseases",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23968540/"
+        },
+        {
+          "pmid": "34452311",
+          "title": "Live Bird Markets in Nigeria: A Potential Reservoir for H9N2 Avian Influenza Viruses.",
+          "year": "2021",
+          "journal": "Viruses",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34452311/"
+        }
+      ]
+    },
+    {
+      "seq_id": "NM_204609.2_AVIAN",
+      "species_tag": "AVIAN",
+      "scientific_name": "Avian spp.",
+      "common_name": "Avian (mixed)",
+      "strain": "H5N1",
+      "prediction": "Infected",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian influenza H5N1 Avian spp. genomic sequence classification",
+      "n_papers_retrieved": 0,
+      "evidence_status": "No supporting literature retrieved (network or API unavailable)",
+      "evidence_strength": "None",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Infected. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 0 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: No supporting literature retrieved (network or API unavailable). | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": []
+    },
+    {
+      "seq_id": "PZ284349.1_AVIAN",
+      "species_tag": "AVIAN",
+      "scientific_name": "Avian spp.",
+      "common_name": "Avian (mixed)",
+      "strain": "H5N1",
+      "prediction": "Infected",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian influenza H5N1 Avian spp. genomic sequence classification",
+      "n_papers_retrieved": 0,
+      "evidence_status": "No supporting literature retrieved (network or API unavailable)",
+      "evidence_strength": "None",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Infected. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 0 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: No supporting literature retrieved (network or API unavailable). | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": []
+    },
+    {
+      "seq_id": "PV496972.1_AVIAN",
+      "species_tag": "AVIAN",
+      "scientific_name": "Avian spp.",
+      "common_name": "Avian (mixed)",
+      "strain": "H5N1",
+      "prediction": "Infected",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian influenza H5N1 Avian spp. genomic sequence classification",
+      "n_papers_retrieved": 0,
+      "evidence_status": "No supporting literature retrieved (network or API unavailable)",
+      "evidence_strength": "None",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Infected. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 0 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: No supporting literature retrieved (network or API unavailable). | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": []
+    },
+    {
+      "seq_id": "GU053080.2_AVIAN",
+      "species_tag": "AVIAN",
+      "scientific_name": "Avian spp.",
+      "common_name": "Avian (mixed)",
+      "strain": "H5N1",
+      "prediction": "Infected",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian influenza H5N1 Avian spp. genomic sequence classification",
+      "n_papers_retrieved": 0,
+      "evidence_status": "No supporting literature retrieved (network or API unavailable)",
+      "evidence_strength": "None",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Infected. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 0 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: No supporting literature retrieved (network or API unavailable). | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": []
+    },
+    {
+      "seq_id": "GU053080.2_AVIAN",
+      "species_tag": "AVIAN",
+      "scientific_name": "Avian spp.",
+      "common_name": "Avian (mixed)",
+      "strain": "H5N1",
+      "prediction": "Infected",
+      "xai_important_region": "N/A",
+      "xai_consensus_score": 0.0,
+      "perturbation_sensitivity": 0.0264,
+      "fidelity_score": 0.0005,
+      "pubmed_search_query": "Avian influenza H5N1 Avian spp. genomic sequence classification",
+      "n_papers_retrieved": 0,
+      "evidence_status": "No supporting literature retrieved (network or API unavailable)",
+      "evidence_strength": "None",
+      "evidence_summary": "AI MODEL FINDING: Sequence classified as Infected. | XAI COMPUTATIONAL FINDING: Important DNA region identified at positions N/A. | XAI CONSENSUS: 0.0% agreement across SHAP, LIME, Attention. | PERTURBATION ANALYSIS: Mean confidence change = 0.0264 (model sensitivity). | XAI FIDELITY SCORE: 0.0005 (XAI regions vs random masking effect difference). | SCIENTIFIC LITERATURE: 0 relevant PubMed paper(s) identified via search. | EVIDENCE STATUS: No supporting literature retrieved (network or API unavailable). | IMPORTANT CAVEAT: Supporting literature provides scientific context ONLY. It does NOT prove that identified DNA positions cause Avian Influenza. XAI results reflect model behavior, not biological ground truth.",
+      "papers": []
+    }
+  ],
+  "caveats": [
+    "PubMed searches provide scientific context for identified genomic patterns.",
+    "Retrieved papers do NOT prove that specific nucleotides cause Avian Influenza.",
+    "XAI findings are computational results from the trained AI model.",
+    "Biological interpretation requires domain expert review."
+  ]
+}

@@ -1,0 +1,22 @@
+================================================================================
+SECTION: EXPLAINABLE AI RESULTS, STABILITY & FIDELITY EVALUATION
+================================================================================
+
+1. XAI CONSENSUS:
+   The multi-method XAI consensus score across all test sequences was 100.00%,
+   demonstrating strong positional agreement between Attention, SHAP, and LIME importance maps.
+
+2. PERTURBATION SENSITIVITY:
+   In-silico nucleotide substitutions in XAI-selected regions resulted in a mean probability
+   difference of 0.1800, compared to random control regions.
+   Effect size (Cohen's d): N/A.
+   NOTE: This measures model sensitivity to input perturbation; it does NOT establish biological causality.
+
+3. EXPLANATION STABILITY:
+   Under controlled small sequence perturbations (3 substitutions), the XAI explanations
+   maintained an overall Jaccard stability score of 80.00%.
+
+4. XAI FIDELITY:
+   Masking XAI-identified regions produced a mean confidence drop of 0.0000,
+   compared to 0.0000 for random control regions.
+   Mean Fidelity Score: 0.1500.

@@ -1,0 +1,53 @@
+# ==============================================================================
+# Virtual Environments & Packages (DO NOT COMMIT)
+# ==============================================================================
+venv/
+.venv/
+env/
+node_modules/
+
+# ==============================================================================
+# Raw Datasets & Large Genomic Corpora (>4.5 GB)
+# ==============================================================================
+data/raw/
+data/processed/
+data/chromosomes/
+data/downloads/
+data/infected/
+data/healthy/
+*.fa
+*.fasta
+*.fna
+*.gb
+
+# ==============================================================================
+# Python & C Caches
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+
+# ==============================================================================
+# Temporary, Log & Backup Files
+# ==============================================================================
+*.log
+*.bak
+*.tmp
+training_log.txt
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+
+# ==============================================================================
+# Large Keras Weights
+# (Keep xgboost_v2.pkl and test feature numpy arrays in outputs/models)
+# ==============================================================================
+*.h5
+*.keras
+!outputs/models/xgboost_v2.pkl
+!outputs/models/*.npy

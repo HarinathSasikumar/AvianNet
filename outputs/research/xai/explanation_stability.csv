@@ -1,0 +1,16 @@
+seq_id,species_tag,scientific_name,prediction,n_features,top_k,n_perturbations,original_shap_region,original_lime_region,original_attn_region,shap_stability_jaccard,lime_stability_jaccard,attn_stability_jaccard,shap_rank_corr_mean,lime_rank_corr_mean,attn_rank_corr_mean,overall_stability_score,overall_stability_pct
+PZ065756.1_DUCK,DUCK,Anas platyrhynchos,Healthy,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.648,0.6508,1.0,100.0
+NM_001310393.1_DUCK,DUCK,Anas platyrhynchos,Infected,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7403,0.6912,1.0,100.0
+NW_028154231.1_AVIAN,AVIAN,Avian spp.,Healthy,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7608,0.7218,1.0,100.0
+NM_001282815.1_PIGEON,PIGEON,Columba livia,Healthy,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.8389,0.7952,1.0,100.0
+AB618546.1_PIGEON,PIGEON,Columba livia,Infected,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7744,0.729,1.0,100.0
+NM_001030977.2_GALLUS,GALLUS,Gallus gallus,Healthy,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7828,0.7828,1.0,100.0
+NM_204609.2_GALLUS,GALLUS,Gallus gallus,Infected,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.5603,0.6496,1.0,100.0
+XM_082301035.1_AVIAN,AVIAN,Avian spp.,Healthy,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.0715,0.2485,1.0,100.0
+PZ276932.1_DUCK,DUCK,Anas platyrhynchos,Healthy,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7521,0.7663,1.0,100.0
+NM_001398084.1_GALLUS,GALLUS,Gallus gallus,Healthy,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7234,0.6447,1.0,100.0
+NM_204609.2_AVIAN,AVIAN,Avian spp.,Infected,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7618,0.6595,1.0,100.0
+PZ284349.1_AVIAN,AVIAN,Avian spp.,Infected,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7794,0.837,1.0,100.0
+PV496972.1_AVIAN,AVIAN,Avian spp.,Infected,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.6602,0.7757,1.0,100.0
+GU053080.2_AVIAN,AVIAN,Avian spp.,Infected,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.7681,0.7082,1.0,100.0
+GU053080.2_AVIAN,AVIAN,Avian spp.,Infected,10,10,5,0–9,0–9,0–9,1.0,1.0,1.0,0.0,0.6996,0.6887,1.0,100.0

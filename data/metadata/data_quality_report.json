@@ -1,0 +1,38 @@
+{
+    "total_parsed": 26159,
+    "invalid_removed": 0,
+    "duplicates_removed": 774,
+    "final_valid": 25385,
+    "species_breakdown": {
+        "Anas platyrhynchos": {
+            "Healthy": 2975,
+            "Infected": 657,
+            "total": 3632
+        },
+        "Anser anser": {
+            "Healthy": 2903,
+            "Infected": 0,
+            "total": 2903
+        },
+        "Columba livia": {
+            "Healthy": 2993,
+            "Infected": 15,
+            "total": 3008
+        },
+        "Gallus gallus": {
+            "Healthy": 9555,
+            "Infected": 337,
+            "total": 9892
+        },
+        "Meleagris gallopavo": {
+            "Healthy": 2989,
+            "Infected": 0,
+            "total": 2989
+        },
+        "Passer domesticus": {
+            "Healthy": 2961,
+            "Infected": 0,
+            "total": 2961
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "Total Downloaded Sequences Processed": 12206,
+    "Total Healthy Samples Found": 5436,
+    "Total Infected Samples Found": 4539,
+    "Total Final Balanced Dataset Size": 9078,
+    "Species / Strain Distribution": {
+        "AVIAN": 100,
+        "DUCK": 55,
+        "GALLUS": 5046,
+        "PIGEON": 117,
+        "TURKEY": 118,
+        "H5N1": 546,
+        "H5N2": 571,
+        "H5N6": 578,
+        "H5N8": 529,
+        "H7N3": 598,
+        "H7N7": 547,
+        "H7N9": 636,
+        "H9N2": 534
+    },
+    "Average Sequence Length": 114698.463358396,
+    "Minimum Sequence Length": 10,
+    "Maximum Sequence Length": 150990227,
+    "Number of Removed Duplicates": 2231,
+    "Number of Discarded Invalid Sequences": 0
+}

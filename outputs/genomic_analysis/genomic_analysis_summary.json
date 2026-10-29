@@ -1,0 +1,143 @@
+{
+  "species_sequence_counts": {
+    "Gallus gallus": {
+      "healthy": 100,
+      "infected": 141
+    },
+    "Anas platyrhynchos": {
+      "healthy": 100,
+      "infected": 50
+    },
+    "Meleagris gallopavo": {
+      "healthy": 100,
+      "infected": 0
+    },
+    "Anser anser": {
+      "healthy": 50,
+      "infected": 0
+    },
+    "Columba livia": {
+      "healthy": 100,
+      "infected": 15
+    },
+    "Passer domesticus": {
+      "healthy": 50,
+      "infected": 0
+    }
+  },
+  "anova_gc": {
+    "F": 16.200661903648598,
+    "p": 3.893210705911873e-15,
+    "significant": true
+  },
+  "pca_variance": {
+    "PC1": 0.19404387474060059,
+    "PC2": 0.10944495350122452
+  },
+  "pearson_correlation": {
+    "G.gallus_vs_A.platyr.": 0.3199723958969116,
+    "G.gallus_vs_M.gallop.": 0.02073354832828045,
+    "G.gallus_vs_A.anser": 0.5253503918647766,
+    "G.gallus_vs_C.livia": 0.815179705619812,
+    "G.gallus_vs_P.domest.": 0.1432979702949524,
+    "A.platyr._vs_M.gallop.": 0.8003551363945007,
+    "A.platyr._vs_A.anser": 0.31611698865890503,
+    "A.platyr._vs_C.livia": 0.5239802598953247,
+    "A.platyr._vs_P.domest.": 0.15550711750984192,
+    "M.gallop._vs_A.anser": 0.049242980778217316,
+    "M.gallop._vs_C.livia": 0.3313804864883423,
+    "M.gallop._vs_P.domest.": 0.09013301134109497,
+    "A.anser_vs_C.livia": 0.3817245364189148,
+    "A.anser_vs_P.domest.": 0.42417824268341064,
+    "C.livia_vs_P.domest.": 0.07225950807332993
+  },
+  "js_divergence": {
+    "G.gallus_vs_A.platyr.": 0.17909075319766998,
+    "G.gallus_vs_M.gallop.": 0.20986101031303406,
+    "G.gallus_vs_A.anser": 0.18009527027606964,
+    "G.gallus_vs_C.livia": 0.1253533810377121,
+    "G.gallus_vs_P.domest.": 0.24326086044311523,
+    "A.platyr._vs_M.gallop.": 0.0728500708937645,
+    "A.platyr._vs_A.anser": 0.17593427002429962,
+    "A.platyr._vs_C.livia": 0.10154582560062408,
+    "A.platyr._vs_P.domest.": 0.1919897496700287,
+    "M.gallop._vs_A.anser": 0.20419466495513916,
+    "M.gallop._vs_C.livia": 0.11434175074100494,
+    "M.gallop._vs_P.domest.": 0.19292959570884705,
+    "A.anser_vs_C.livia": 0.17207975685596466,
+    "A.anser_vs_P.domest.": 0.20005059242248535,
+    "C.livia_vs_P.domest.": 0.19477009773254395
+  },
+  "common_influenza_kmers_in_all_species": [
+    "ATG",
+    "GGC",
+    "CAA",
+    "TGC",
+    "GCC",
+    "AAG",
+    "CGT",
+    "TCA",
+    "AGT",
+    "GAT"
+  ],
+  "influenza_kmer_details": {
+    "ATG": {
+      "function": "HA initiation codon",
+      "mean_freq_healthy_pct": 1.4980688095092773,
+      "in_all_species": true
+    },
+    "GGC": {
+      "function": "Glycine-rich HA stem",
+      "mean_freq_healthy_pct": 1.7905611991882324,
+      "in_all_species": true
+    },
+    "CAA": {
+      "function": "Glutamine receptor pocket",
+      "mean_freq_healthy_pct": 1.8045144081115723,
+      "in_all_species": true
+    },
+    "TGC": {
+      "function": "Cysteine bridge NA",
+      "mean_freq_healthy_pct": 1.8240036964416504,
+      "in_all_species": true
+    },
+    "GCC": {
+      "function": "PB2 structural stability",
+      "mean_freq_healthy_pct": 1.7488704919815063,
+      "in_all_species": true
+    },
+    "AAG": {
+      "function": "Lysine M2 channel",
+      "mean_freq_healthy_pct": 1.6986513137817383,
+      "in_all_species": true
+    },
+    "CGT": {
+      "function": "Arginine cleavage site",
+      "mean_freq_healthy_pct": 0.7731782793998718,
+      "in_all_species": true
+    },
+    "TCA": {
+      "function": "Serine phosphorylation",
+      "mean_freq_healthy_pct": 1.550107717514038,
+      "in_all_species": true
+    },
+    "AGT": {
+      "function": "Serine-rich domain",
+      "mean_freq_healthy_pct": 1.2493242025375366,
+      "in_all_species": true
+    },
+    "GAT": {
+      "function": "Aspartate transport",
+      "mean_freq_healthy_pct": 1.3136497735977173,
+      "in_all_species": true
+    }
+  },
+  "mean_gc_per_species": {
+    "G.gallus": 53.18751633170399,
+    "A.platyr.": 48.093161771598,
+    "M.gallop.": 44.18923076923077,
+    "A.anser": 55.415,
+    "C.livia": 52.466675551871184,
+    "P.domest.": 48.539727446131366
+  }
+}

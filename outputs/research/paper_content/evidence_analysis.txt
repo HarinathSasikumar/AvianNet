@@ -1,0 +1,17 @@
+================================================================================
+SECTION: EVIDENCE-BACKED GENOMIC INTERPRETATION (PUBMED RAG)
+================================================================================
+
+To contextualize AI findings within established biomedical research, identified genomic
+patterns and mutation hotspots were dynamically queried against the NCBI PubMed database
+using a Retrieval-Augmented Generation (RAG) pipeline.
+
+Scientific literature retrieval results:
+  - Every flagged sequence is enriched with up to 5 peer-reviewed PubMed articles.
+  - Literature evidence is categorized as "Supporting literature identified" or "Limited support".
+
+IMPORTANT METHODOLOGICAL BOUNDARY:
+  Supporting literature is presented to provide scientific context ONLY.
+  The retrieval of a PubMed article does NOT constitute proof that a specific nucleotide
+  substitution causes infection. Computational model findings and biological evidence are
+  strictly distinguished throughout this framework.

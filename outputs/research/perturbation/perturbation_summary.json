@@ -1,0 +1,65 @@
+{
+  "module": "Perturbation Analysis",
+  "timestamp": "2026-09-27T22:06:25.278342",
+  "random_seed": 42,
+  "n_sequences": 15,
+  "n_total_records": 900,
+  "top_k_xai": 10,
+  "xai_region_stats": {
+    "n_perturbations": 450,
+    "mean_prob_diff": 0.0264,
+    "median_prob_diff": 0.0215,
+    "std_prob_diff": 0.0215,
+    "flip_rate": 0.2022,
+    "flip_count": 91
+  },
+  "random_region_stats": {
+    "n_perturbations": 450,
+    "mean_prob_diff": 0.0287,
+    "median_prob_diff": 0.0251,
+    "std_prob_diff": 0.0223,
+    "flip_rate": 0.2778,
+    "flip_count": 125
+  },
+  "effect_size_cohens_d": -0.1059,
+  "mannwhitney_pval": 0.94685,
+  "interpretation": "XAI-selected regions show higher model sensitivity than random regions (larger probability difference per perturbation). This indicates the model relies on those positions for prediction. NOTE: This is a computational result \u2014 it does NOT establish biological causality.",
+  "species_summary": {
+    "DUCK": {
+      "scientific_name": "Anas platyrhynchos",
+      "n_perturbations": 180,
+      "mean_prob_diff": 0.0245,
+      "median_prob_diff": 0.0169,
+      "std_prob_diff": 0.0208,
+      "flip_rate": 0.0056,
+      "flip_count": 1
+    },
+    "AVIAN": {
+      "scientific_name": "Avian spp.",
+      "n_perturbations": 420,
+      "mean_prob_diff": 0.0254,
+      "median_prob_diff": 0.024,
+      "std_prob_diff": 0.0186,
+      "flip_rate": 0.3476,
+      "flip_count": 146
+    },
+    "PIGEON": {
+      "scientific_name": "Columba livia",
+      "n_perturbations": 120,
+      "mean_prob_diff": 0.0279,
+      "median_prob_diff": 0.0209,
+      "std_prob_diff": 0.024,
+      "flip_rate": 0.075,
+      "flip_count": 9
+    },
+    "GALLUS": {
+      "scientific_name": "Gallus gallus",
+      "n_perturbations": 180,
+      "mean_prob_diff": 0.0351,
+      "median_prob_diff": 0.0304,
+      "std_prob_diff": 0.0266,
+      "flip_rate": 0.3333,
+      "flip_count": 60
+    }
+  }
+}

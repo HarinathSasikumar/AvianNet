@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avian DNA Classifier — Research Report</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f8fafc; color: #1e293b; }
+    header { background: linear-gradient(135deg,#1e3a5f,#1d4ed8); color: white; padding: 2.5rem 3rem; }
+    header h1 { margin:0; font-size:2rem; }
+    header p  { margin:0.4rem 0 0; opacity:0.8; }
+    main { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
+    section { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 2rem; margin-bottom: 2rem; }
+    h2 { color: #1d4ed8; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+    h3 { color: #334155; margin-top: 1.5rem; }
+    .table-wrap { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.875rem; margin-top: 0.5rem; }
+    th { background: #1d4ed8; color: white; padding: 8px 12px; text-align: left; }
+    td { padding: 7px 12px; border-bottom: 1px solid #e2e8f0; }
+    tr:nth-child(even) { background: #f1f5f9; }
+    .badge { display:inline-block; padding:2px 10px; border-radius:999px; font-size:0.8rem; font-weight:600; }
+    .badge-blue { background:#dbeafe; color:#1d4ed8; }
+    footer { text-align:center; padding:2rem; color:#94a3b8; font-size:0.8rem; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>🧬 Avian DNA Classification — Research Report</h1>
+  <p>Hybrid DNABERT-2 + CNN + GAT + XGBoost Pipeline &nbsp;|&nbsp; Generated: 2026-07-31 01:28:02</p>
+</header>
+<main>
+  <section>
+    <h2>📊 Final Model Performance</h2>
+    <h3>Full Metrics</h3><table><tr><td><b>model_name</b></td><td>Proposed Hybrid (DNABERT+CNN+GAT+XGB)</td></tr><tr><td><b>accuracy</b></td><td>0.9765</td></tr><tr><td><b>precision</b></td><td>0.9909</td></tr><tr><td><b>recall</b></td><td>0.9618</td></tr><tr><td><b>sensitivity</b></td><td>0.9618</td></tr><tr><td><b>specificity</b></td><td>0.9912</td></tr><tr><td><b>f1_score</b></td><td>0.9762</td></tr><tr><td><b>roc_auc</b></td><td>0.9943</td></tr><tr><td><b>pr_auc</b></td><td>0.9954</td></tr><tr><td><b>mcc</b></td><td>0.9534</td></tr><tr><td><b>balanced_accuracy</b></td><td>0.9765</td></tr><tr><td><b>cohen_kappa</b></td><td>0.953</td></tr><tr><td><b>training_time_s</b></td><td>2.47</td></tr><tr><td><b>inference_time_s</b></td><td>0.0</td></tr></table>
+  </section>
+
+  <section>
+    <h2>🔬 Baseline Model Comparison</h2>
+    
+        <h3>Comparison Table</h3>
+        <div class='table-wrap'>
+        <table>
+          <thead><tr><th>model_name</th><th>accuracy</th><th>precision</th><th>recall</th><th>sensitivity</th><th>specificity</th><th>f1_score</th><th>roc_auc</th><th>pr_auc</th><th>mcc</th><th>balanced_accuracy</th><th>cohen_kappa</th><th>training_time_s</th><th>inference_time_s</th></tr></thead>
+          <tbody><tr><td>Logistic Regression</td><td>0.9295</td><td>0.9221</td><td>0.9383</td><td>0.9383</td><td>0.9207</td><td>0.9301</td><td>0.9699</td><td>0.96</td><td>0.8592</td><td>0.9295</td><td>0.859</td><td>4.06</td><td>0.0</td></tr><tr><td>Random Forest</td><td>0.9758</td><td>0.9985</td><td>0.953</td><td>0.953</td><td>0.9985</td><td>0.9752</td><td>0.9922</td><td>0.9939</td><td>0.9525</td><td>0.9758</td><td>0.9515</td><td>2.06</td><td>0.0001</td></tr><tr><td>SVM</td><td>0.9743</td><td>0.9879</td><td>0.9604</td><td>0.9604</td><td>0.9883</td><td>0.9739</td><td>0.9948</td><td>0.9957</td><td>0.949</td><td>0.9743</td><td>0.9486</td><td>19.19</td><td>0.0005</td></tr><tr><td>KNN</td><td>0.9684</td><td>0.9969</td><td>0.9398</td><td>0.9398</td><td>0.9971</td><td>0.9675</td><td>0.9902</td><td>0.9902</td><td>0.9384</td><td>0.9684</td><td>0.9369</td><td>0.0</td><td>0.0002</td></tr><tr><td>Naive Bayes</td><td>0.9068</td><td>0.9695</td><td>0.8399</td><td>0.8399</td><td>0.9736</td><td>0.9001</td><td>0.9742</td><td>0.9763</td><td>0.8209</td><td>0.9068</td><td>0.8135</td><td>0.05</td><td>0.0</td></tr><tr><td>XGBoost (k-mer)</td><td>0.9765</td><td>0.9909</td><td>0.9618</td><td>0.9618</td><td>0.9912</td><td>0.9762</td><td>0.9943</td><td>0.9954</td><td>0.9534</td><td>0.9765</td><td>0.953</td><td>4.56</td><td>0.0</td></tr><tr><td>Proposed Hybrid (DNABERT+CNN+GAT+XGB)</td><td>0.9765</td><td>0.9909</td><td>0.9618</td><td>0.9618</td><td>0.9912</td><td>0.9762</td><td>0.9943</td><td>0.9954</td><td>0.9534</td><td>0.9765</td><td>0.953</td><td>2.47</td><td>0.0</td></tr></tbody>
+        </table>
+        </div>
+  </section>
+
+  <section>
+    <h2>🔩 Ablation Study</h2>
+    
+        <h3>Component Ablation</h3>
+        <div class='table-wrap'>
+        <table>
+          <thead><tr><th>model_name</th><th>accuracy</th><th>precision</th><th>recall</th><th>sensitivity</th><th>specificity</th><th>f1_score</th><th>roc_auc</th><th>pr_auc</th><th>mcc</th><th>balanced_accuracy</th><th>cohen_kappa</th><th>training_time_s</th><th>inference_time_s</th></tr></thead>
+          <tbody><tr><td>Full Model</td><td>0.9765</td><td>0.9909</td><td>0.9618</td><td>0.9618</td><td>0.9912</td><td>0.9762</td><td>0.9943</td><td>0.9954</td><td>0.9534</td><td>0.9765</td><td>0.953</td><td>4.37</td><td>0.0</td></tr><tr><td>w/o DNABERT</td><td>0.9743</td><td>0.9939</td><td>0.9545</td><td>0.9545</td><td>0.9941</td><td>0.9738</td><td>0.9933</td><td>0.9948</td><td>0.9494</td><td>0.9743</td><td>0.9486</td><td>3.29</td><td>0.0</td></tr><tr><td>w/o GAT</td><td>0.978</td><td>0.991</td><td>0.9648</td><td>0.9648</td><td>0.9912</td><td>0.9777</td><td>0.9929</td><td>0.9945</td><td>0.9563</td><td>0.978</td><td>0.9559</td><td>3.08</td><td>0.0</td></tr><tr><td>w/o Attention</td><td>0.9765</td><td>0.9939</td><td>0.9589</td><td>0.9589</td><td>0.9941</td><td>0.9761</td><td>0.9934</td><td>0.9948</td><td>0.9536</td><td>0.9765</td><td>0.953</td><td>3.04</td><td>0.0</td></tr><tr><td>w/o XGBoost (LogReg)</td><td>0.9295</td><td>0.9221</td><td>0.9383</td><td>0.9383</td><td>0.9207</td><td>0.9301</td><td>0.9699</td><td>0.96</td><td>0.8592</td><td>0.9295</td><td>0.859</td><td>2.85</td><td>0.0</td></tr><tr><td>w/o RAG (Pred-only)</td><td>0.9765</td><td>0.9909</td><td>0.9618</td><td>0.9618</td><td>0.9912</td><td>0.9762</td><td>0.9943</td><td>0.9954</td><td>0.9534</td><td>0.9765</td><td>0.953</td><td>4.16</td><td>0.0</td></tr></tbody>
+        </table>
+        </div>
+  </section>
+
+  <section>
+    <h2>📁 Dataset Report</h2>
+    <h3>Dataset Statistics</h3><table><tr><td><b>Total Downloaded Sequences Processed</b></td><td>12206</td></tr><tr><td><b>Total Healthy Samples Found</b></td><td>5436</td></tr><tr><td><b>Total Infected Samples Found</b></td><td>4539</td></tr><tr><td><b>Total Final Balanced Dataset Size</b></td><td>9078</td></tr><tr><td><b>Species / Strain Distribution</b></td><td>{'AVIAN': 100, 'DUCK': 55, 'GALLUS': 5046, 'PIGEON': 117, 'TURKEY': 118, 'H5N1': 546, 'H5N2': 571, 'H5N6': 578, 'H5N8': 529, 'H7N3': 598, 'H7N7': 547, 'H7N9': 636, 'H9N2': 534}</td></tr><tr><td><b>Average Sequence Length</b></td><td>114698.463358396</td></tr><tr><td><b>Minimum Sequence Length</b></td><td>10</td></tr><tr><td><b>Maximum Sequence Length</b></td><td>150990227</td></tr><tr><td><b>Number of Removed Duplicates</b></td><td>2231</td></tr><tr><td><b>Number of Discarded Invalid Sequences</b></td><td>0</td></tr><tr><td><b>Train Samples</b></td><td>6354</td></tr><tr><td><b>Train Feature Dims</b></td><td>500</td></tr><tr><td><b>Val Samples</b></td><td>1362</td></tr><tr><td><b>Val Feature Dims</b></td><td>500</td></tr><tr><td><b>Test Samples</b></td><td>1362</td></tr><tr><td><b>Test Feature Dims</b></td><td>500</td></tr><tr><td><b>Class Balance (Healthy %)</b></td><td>54.5</td></tr><tr><td><b>Class Balance (Infected %)</b></td><td>45.5</td></tr><tr><td><b>Average Sequence Length (chars)</b></td><td>114698.463358396</td></tr><tr><td><b>Min Sequence Length (chars)</b></td><td>10</td></tr><tr><td><b>Max Sequence Length (chars)</b></td><td>150990227</td></tr><tr><td><b>Duplicate Sequences Removed</b></td><td>2231</td></tr><tr><td><b>Invalid Sequences Discarded</b></td><td>0</td></tr><tr><td><b>Missing Data</b></td><td>None detected</td></tr><tr><td><b>Data Source</b></td><td>NCBI Nucleotide (public)</td></tr><tr><td><b>Healthy Species</b></td><td>Gallus gallus (Chicken CDS)</td></tr><tr><td><b>Infected Strains</b></td><td>H5N1, H5N2, H5N6, H5N8, H7N3, H7N7, H7N9, H9N2</td></tr><tr><td><b>K-mer Length</b></td><td>3</td></tr><tr><td><b>Max Encoded Sequence Length</b></td><td>500</td></tr><tr><td><b>Train/Val/Test Split</b></td><td>70% / 15% / 15% (stratified)</td></tr><tr><td><b>Random Seed</b></td><td>42</td></tr></table>
+  </section>
+
+  <section>
+    <h2>🤖 Model Architecture</h2>
+    <h3>Architecture & Hyperparameters</h3><table><tr><td><b>Pipeline Type</b></td><td>Multimodal Hybrid (PyTorch + XGBoost)</td></tr><tr><td><b>Encoder</b></td><td>DNABERT-2 (zhihan1996/DNABERT-2-117M, 117M params)</td></tr><tr><td><b>Feature Extractor</b></td><td>1D Convolutional Neural Network (PyTorch)</td></tr><tr><td><b>Graph Module</b></td><td>Graph Attention Network (GAT, 2-layer)</td></tr><tr><td><b>Fusion Module</b></td><td>Multi-Head Cross-Attention Transformer (4 heads, 2 layers)</td></tr><tr><td><b>Classifier</b></td><td>XGBoost (n_estimators=100, max_depth=6)</td></tr><tr><td><b>TF Branch</b></td><td>CNN + BiLSTM + Attention (TensorFlow/Keras)</td></tr><tr><td><b>K-mer Length</b></td><td>3</td></tr><tr><td><b>Sequence Max Length</b></td><td>500</td></tr><tr><td><b>DNABERT Embedding Dim</b></td><td>768</td></tr><tr><td><b>CNN Filters</b></td><td>128 → 64</td></tr><tr><td><b>GAT Hidden Dim</b></td><td>64</td></tr><tr><td><b>GAT Output Dim</b></td><td>128</td></tr><tr><td><b>Fusion Dim</b></td><td>256</td></tr><tr><td><b>XGBoost Estimators</b></td><td>100</td></tr><tr><td><b>XGBoost Max Depth</b></td><td>6</td></tr><tr><td><b>XGBoost Learning Rate</b></td><td>0.1</td></tr><tr><td><b>Random Seed</b></td><td>42</td></tr><tr><td><b>Optimizer</b></td><td>Adam (TF branch), XGBoost built-in</td></tr><tr><td><b>Loss Function</b></td><td>Binary Cross-Entropy (TF), log-loss (XGB)</td></tr><tr><td><b>Batch Size</b></td><td>32</td></tr><tr><td><b>Epochs (TF branch)</b></td><td>50</td></tr><tr><td><b>Early Stopping Patience</b></td><td>10</td></tr><tr><td><b>OS</b></td><td>Windows 10</td></tr><tr><td><b>Python Version</b></td><td>3.10.0</td></tr><tr><td><b>PyTorch Version</b></td><td>2.13.0+cpu</td></tr><tr><td><b>Hardware Device</b></td><td>CPU</td></tr><tr><td><b>GPU</b></td><td>N/A</td></tr><tr><td><b>Training Time (s)</b></td><td>58.03</td></tr><tr><td><b>Inference Time per sample</b></td><td>~0.002s (CPU)</td></tr><tr><td><b>Best Model Path</b></td><td>E:\Desktop\avian-dna-classifier\outputs\models\best_avian_model.keras</td></tr><tr><td><b>Figures Directory</b></td><td>E:\Desktop\avian-dna-classifier\outputs\research\figures</td></tr><tr><td><b>Reports Directory</b></td><td>E:\Desktop\avian-dna-classifier\outputs\research\reports</td></tr></table>
+  </section>
+</main>
+<footer>Avian DNA Classifier Research Report &copy; 2024. For academic use.</footer>
+</body>
+</html>

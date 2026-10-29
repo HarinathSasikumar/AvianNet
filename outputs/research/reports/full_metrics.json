@@ -1,0 +1,53 @@
+{
+    "model_name": "Proposed Hybrid (DNABERT+CNN+GAT+XGB)",
+    "accuracy": 0.9765,
+    "precision": 0.9909,
+    "recall": 0.9618,
+    "sensitivity": 0.9618,
+    "specificity": 0.9912,
+    "f1_score": 0.9762,
+    "roc_auc": 0.9943,
+    "pr_auc": 0.9954,
+    "mcc": 0.9534,
+    "balanced_accuracy": 0.9765,
+    "cohen_kappa": 0.953,
+    "confusion_matrix": [
+        [
+            675,
+            6
+        ],
+        [
+            26,
+            655
+        ]
+    ],
+    "classification_report": {
+        "Healthy": {
+            "precision": 0.9629101283880172,
+            "recall": 0.9911894273127754,
+            "f1-score": 0.9768451519536903,
+            "support": 681.0
+        },
+        "Infected": {
+            "precision": 0.9909228441754917,
+            "recall": 0.9618208516886931,
+            "f1-score": 0.9761549925484352,
+            "support": 681.0
+        },
+        "accuracy": 0.9765051395007343,
+        "macro avg": {
+            "precision": 0.9769164862817544,
+            "recall": 0.9765051395007343,
+            "f1-score": 0.9765000722510627,
+            "support": 1362.0
+        },
+        "weighted avg": {
+            "precision": 0.9769164862817544,
+            "recall": 0.9765051395007343,
+            "f1-score": 0.9765000722510627,
+            "support": 1362.0
+        }
+    },
+    "training_time_s": 2.47,
+    "inference_time_s": 0.0
+}

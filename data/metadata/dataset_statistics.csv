@@ -1,0 +1,10 @@
+Metric,Value
+Total Downloaded Sequences Processed,12206
+Total Healthy Samples Found,5436
+Total Infected Samples Found,4539
+Total Final Balanced Dataset Size,9078
+Average Sequence Length,114698.463358396
+Minimum Sequence Length,10
+Maximum Sequence Length,150990227
+Number of Removed Duplicates,2231
+Number of Discarded Invalid Sequences,0

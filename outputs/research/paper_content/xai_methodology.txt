@@ -1,0 +1,19 @@
+================================================================================
+SECTION: EXPLAINABLE AI FRAMEWORK & CONSENSUS METHODOLOGY
+================================================================================
+
+To establish biological transparency and computational trust, we implemented a multi-method
+Explainable AI (XAI) framework combining:
+  1. Attention Weight Extraction: Derived from the 4-head Transformer Cross-Attention layer.
+  2. SHAP (SHapley Additive exPlanations): KernelSHAP feature attribution over k-mer tokens.
+  3. LIME (Local Interpretable Model-agnostic Explanations): Local linear surrogate modeling.
+
+For every evaluated test sequence, importance vectors are normalized using min-max scaling.
+Top-k (k=10) important nucleotide regions are identified across all three methods.
+Pairwise agreement is quantified using Jaccard Similarity:
+  J(A, B) = |A ∩ B| / |A ∪ B|
+
+A Unified XAI Consensus Score is defined as the mean pairwise Jaccard index:
+  Consensus = Mean(J_attn_shap, J_attn_lime, J_shap_lime)
+
+Random Seed: 42 (reproducible across all experiments).

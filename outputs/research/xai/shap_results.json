@@ -1,0 +1,52 @@
+{
+  "shap_summary_png": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\shap_summary.png",
+  "shap_summary_pdf": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\shap_summary.pdf",
+  "shap_importance_png": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\shap_importance.png",
+  "shap_importance_pdf": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\shap_importance.pdf",
+  "global_importance": [
+    {
+      "feature": "AAA_p0",
+      "value": 0.06214232459646609
+    },
+    {
+      "feature": "AGA_p0",
+      "value": 0.019009698240490057
+    },
+    {
+      "feature": "AAC_p0",
+      "value": 0.01155151675605896
+    },
+    {
+      "feature": "AGT_p0",
+      "value": 0.010432174633595612
+    },
+    {
+      "feature": "ACT_p2",
+      "value": 0.01002578823556852
+    },
+    {
+      "feature": "ATA_p0",
+      "value": 0.009413657624188705
+    },
+    {
+      "feature": "GTT_p2",
+      "value": 0.008529892911122484
+    },
+    {
+      "feature": "TTC_p0",
+      "value": 0.008201368454268365
+    },
+    {
+      "feature": "AAT_p0",
+      "value": 0.0081221187632604
+    },
+    {
+      "feature": "ATG_p3",
+      "value": 0.00790886791484368
+    }
+  ],
+  "shap_waterfall_png": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\shap_waterfall.png",
+  "shap_waterfall_pdf": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\shap_waterfall.pdf",
+  "shap_base_value": 0.5134666666666668,
+  "shap_sample_idx": 0
+}

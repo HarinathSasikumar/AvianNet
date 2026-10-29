@@ -1,0 +1,16 @@
+seq_id,species_tag,scientific_name,common_name,prediction,model_confidence,xai_consensus_score,explanation_stability,xai_fidelity_score,pubmed_paper_count,evidence_status,trust_score,trust_score_pct,trust_tier
+AB618546.1_PIGEON,PIGEON,Columba livia,Rock Pigeon,Infected,0.5595,0.75,1.0,0.0071,3,Supporting literature identified,0.6382,63.82,Low Trust / Requires Review
+PZ276932.1_DUCK,DUCK,Anas platyrhynchos,Mallard Duck,Healthy,0.3833,0.75,1.0,0.0379,1,Limited supporting literature identified,0.5776,57.76,Low Trust / Requires Review
+SEQ_00000_SHAP_GLOBAL,GALLUS,Gallus gallus,Chicken,Unknown,0.975,1.0,0.8,0.15,0,Literature search completed,0.8025,80.25,Moderate Trust
+NM_001030977.2_GALLUS,GALLUS,Gallus gallus,Chicken,Healthy,0.5232,0.75,1.0,-0.0355,5,Supporting literature identified,0.6445,64.45,Low Trust / Requires Review
+NM_204609.2_AVIAN,AVIAN,Avian spp.,Avian (mixed),Infected,0.5222,0.75,1.0,-0.0546,0,No supporting literature retrieved (network or API unavailable),0.5942,59.42,Low Trust / Requires Review
+PZ284349.1_AVIAN,AVIAN,Avian spp.,Avian (mixed),Infected,0.6005,0.75,1.0,0.0209,0,No supporting literature retrieved (network or API unavailable),0.626,62.6,Low Trust / Requires Review
+GU053080.2_AVIAN,AVIAN,Avian spp.,Avian (mixed),Infected,0.4765,0.75,1.0,-0.0012,0,No supporting literature retrieved (network or API unavailable),0.5805,58.05,Low Trust / Requires Review
+PV496972.1_AVIAN,AVIAN,Avian spp.,Avian (mixed),Infected,0.5723,0.75,1.0,-0.0351,0,No supporting literature retrieved (network or API unavailable),0.6092,60.92,Low Trust / Requires Review
+NW_028154231.1_AVIAN,AVIAN,Avian spp.,Avian (mixed),Healthy,0.5523,0.75,1.0,-0.0053,0,No supporting literature retrieved (network or API unavailable),0.6032,60.32,Low Trust / Requires Review
+NM_204609.2_GALLUS,GALLUS,Gallus gallus,Chicken,Infected,0.4835,0.75,1.0,-0.0035,5,Supporting literature identified,0.6326,63.26,Low Trust / Requires Review
+PZ065756.1_DUCK,DUCK,Anas platyrhynchos,Mallard Duck,Healthy,0.7643,0.75,1.0,-0.0009,1,Limited supporting literature identified,0.6768,67.68,Low Trust / Requires Review
+NM_001282815.1_PIGEON,PIGEON,Columba livia,Rock Pigeon,Healthy,0.5636,0.75,1.0,0.0127,1,Limited supporting literature identified,0.6217,62.17,Low Trust / Requires Review
+XM_082301035.1_AVIAN,AVIAN,Avian spp.,Avian (mixed),Healthy,0.5298,0.75,1.0,0.0452,0,No supporting literature retrieved (network or API unavailable),0.6145,61.45,Low Trust / Requires Review
+NM_001398084.1_GALLUS,GALLUS,Gallus gallus,Chicken,Healthy,0.7761,0.75,1.0,-0.0162,5,Supporting literature identified,0.7203,72.03,Moderate Trust
+NM_001310393.1_DUCK,DUCK,Anas platyrhynchos,Mallard Duck,Infected,0.4282,0.75,1.0,0.0371,5,Supporting literature identified,0.6308,63.08,Low Trust / Requires Review

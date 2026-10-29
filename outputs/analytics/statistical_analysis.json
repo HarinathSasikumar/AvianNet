@@ -1,0 +1,48 @@
+{
+  "total_samples": 25385,
+  "healthy_samples": 24374,
+  "infected_samples": 1011,
+  "train_samples": 17769,
+  "val_samples": 3808,
+  "test_samples": 3808,
+  "healthy_stats": {
+    "total_sequences": 24374,
+    "duplicates_found": 774,
+    "invalids_found": 0,
+    "avg_length": 460750.99,
+    "min_length": 195,
+    "max_length": 28797521,
+    "median_length": 4349.0,
+    "std_length": 2483091.35,
+    "A_pct": 31.33,
+    "T_pct": 31.32,
+    "G_pct": 18.66,
+    "C_pct": 18.68,
+    "GC_content": 37.35,
+    "AT_content": 62.65
+  },
+  "infected_stats": {
+    "total_sequences": 1011,
+    "duplicates_found": 0,
+    "invalids_found": 0,
+    "avg_length": 2893.5,
+    "min_length": 10,
+    "max_length": 5214047,
+    "median_length": 1565.0,
+    "std_length": 83415.55,
+    "A_pct": 30.38,
+    "T_pct": 25.04,
+    "G_pct": 23.63,
+    "C_pct": 20.96,
+    "GC_content": 44.58,
+    "AT_content": 55.42
+  },
+  "duplicate_report": {
+    "healthy_duplicates": 774,
+    "infected_duplicates": 0
+  },
+  "invalid_report": {
+    "healthy_invalids": 0,
+    "infected_invalids": 0
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "explanations": [
+    {
+      "sample_idx": 2,
+      "true_label": "Infected",
+      "prob_infected": 0.9957180619239807,
+      "top_features": [
+        {
+          "feature": "ATC_p7 <= 9.00",
+          "contribution": 0.05104760822733167
+        },
+        {
+          "feature": "TCA_p6 > 49.00",
+          "contribution": 0.04444184105377789
+        },
+        {
+          "feature": "AGT_p4 <= 13.00",
+          "contribution": -0.0383535250528428
+        },
+        {
+          "feature": "10.00 < GGT_p5 <= 28.00",
+          "contribution": 0.03286764995313584
+        },
+        {
+          "feature": "10.00 < GCG_p5 <= 31.00",
+          "contribution": 0.03193828246158195
+        },
+        {
+          "feature": "11.00 < TTA_p5 <= 28.00",
+          "contribution": 0.030303237131669672
+        },
+        {
+          "feature": "GGC_p1 > 53.00",
+          "contribution": 0.027684611179695527
+        },
+        {
+          "feature": "GAA_p0 <= 10.00",
+          "contribution": 0.02090838627450592
+        },
+        {
+          "feature": "13.00 < CCA_p1 <= 26.00",
+          "contribution": 0.015963612774761226
+        },
+        {
+          "feature": "30.00 < ACG_p7 <= 45.00",
+          "contribution": 0.00975549930122394
+        }
+      ]
+    },
+    {
+      "sample_idx": 0,
+      "true_label": "Healthy",
+      "prob_infected": 0.03793226554989815,
+      "top_features": [
+        {
+          "feature": "GTC_p1 > 49.00",
+          "contribution": -0.0683213019637611
+        },
+        {
+          "feature": "GAG_p7 > 49.00",
+          "contribution": -0.06829215667114724
+        },
+        {
+          "feature": "GGT_p7 > 44.00",
+          "contribution": -0.06321290121429705
+        },
+        {
+          "feature": "TAT_p3 <= 13.00",
+          "contribution": -0.04983539507792038
+        },
+        {
+          "feature": "GGA_p5 > 43.00",
+          "contribution": 0.04675522935603453
+        },
+        {
+          "feature": "CAG_p7 > 42.00",
+          "contribution": 0.039060012202143286
+        },
+        {
+          "feature": "25.00 < TGC_p7 <= 49.00",
+          "contribution": 0.03686747596721698
+        },
+        {
+          "feature": "CTC_p3 <= 15.00",
+          "contribution": -0.03679620222252206
+        },
+        {
+          "feature": "GAC_p3 > 51.00",
+          "contribution": 0.03575759354810752
+        },
+        {
+          "feature": "15.00 < AAC_p7 <= 31.00",
+          "contribution": -0.029736685415233315
+        }
+      ]
+    },
+    {
+      "sample_idx": 15,
+      "true_label": "Infected",
+      "prob_infected": 0.9785489439964294,
+      "top_features": [
+        {
+          "feature": "22.00 < AGA_p0 <= 48.00",
+          "contribution": -0.06122668875103829
+        },
+        {
+          "feature": "11.00 < TAG_p6 <= 27.00",
+          "contribution": 0.05912080038042626
+        },
+        {
+          "feature": "GCA_p6 > 43.00",
+          "contribution": 0.04074396207614673
+        },
+        {
+          "feature": "AAC_p3 <= 15.00",
+          "contribution": -0.03279891395165919
+        },
+        {
+          "feature": "12.00 < GCG_p2 <= 28.00",
+          "contribution": -0.0270906824870027
+        },
+        {
+          "feature": "33.00 < TCA_p2 <= 49.00",
+          "contribution": 0.02625200700403741
+        },
+        {
+          "feature": "24.00 < GAT_p7 <= 41.00",
+          "contribution": 0.02468154924079675
+        },
+        {
+          "feature": "TAA_p7 > 52.00",
+          "contribution": 0.023383370598824546
+        },
+        {
+          "feature": "15.00 < TCC_p0 <= 33.00",
+          "contribution": -0.02276992406342621
+        },
+        {
+          "feature": "TTG_p2 > 46.00",
+          "contribution": 0.02060229317512098
+        }
+      ]
+    }
+  ],
+  "lime_chart_png": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\lime_explanation.png",
+  "lime_chart_pdf": "C:\\Users\\HARINATH S\\OneDrive\\Desktop\\avian-dna-classifier\\outputs\\research\\xai\\lime_explanation.pdf"
+}
